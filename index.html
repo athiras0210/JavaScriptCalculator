@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 pt-5 text-center">
+            <h3 class="text-center m-3" style="text-shadow: 1px 1px 2px red;">Calculator</h3>
+            <!-- Calculator Body -->
+            <div class="calc-body">
+    
+                <!-- Calculator Display Screen -->
+                <div class="calc-screen">
+                    <div id="calc-typed">
+                        <input id="result" class="form-control w-100 mx-auto"
+                            placeholder="Enter" type="text">
+                    </div>
+                </div>
+    
+                <!-- Calculator Buttons -->
+                <div class="calc-button-row">
+                    <button type="button" id="ac" onclick="clearText()" class="btn btn-lg text-danger">AC</button>
+                    <button type="button" id="sqrt" onclick="displayNumber('√')" class="btn btn-lg text-warning">&radic;</button>
+                    <button type="button" id="perc" onclick="displayNumber('%')" class="btn btn-lg text-warning">&#37;</button>
+                    <button type="button" id="div" onclick="displayNumber('÷')" class="btn btn-lg text-warning">&#247;</button>
+                    <button type="button" id="seven" onclick="displayNumber(7)" class="btn btn-lg">7</button>
+                    <button type="button" id="eight" onclick="displayNumber(8)" class="btn btn-lg">8</button>
+                    <button type="button" id="nine" onclick="displayNumber(9)" class="btn btn-lg">9</button>
+                    <button type="button" id="mul" onclick="displayNumber('×')" class="btn btn-lg text-warning">&#215;</button>
+                    <button type="button" id="four" onclick="displayNumber(4)" class="btn btn-lg">4</button>
+                    <button type="button" id="five" onclick="displayNumber(5)" class="btn btn-lg">5</button>
+                    <button type="button" id="six" onclick="displayNumber(6)" class="btn btn-lg">6</button>
+                    <button type="button" id="sub" onclick="displayNumber('-')" class="btn btn-lg text-warning">&#8722;</button>
+                    <button type="button" id="one" onclick="displayNumber(1)" class="btn btn-lg">1</button>
+                    <button type="button" id="two" onclick="displayNumber(2)" class="btn btn-lg">2</button>
+                    <button type="button" id="three" onclick="displayNumber(3)" class="btn btn-lg">3</button>
+                    <button type="button" id="add" onclick="displayNumber('+')" class="btn btn-lg text-warning">&#43;</button>
+                    <button type="button" id="zero" onclick="displayNumber(0)" class="btn btn-lg">0</button>
+                    <button type="button" id="dot" onclick="displayNumber('.')" class="btn btn-lg">.</button>
+                    <button type="button" id="del" onclick="removeLastCharacter()" class="btn btn-lg text-danger">&#9003;</button>
+                    <button type="button" id="equal" onclick="evaluateNum()"
+                        class="btn btn-lg text-warning">&#61;</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+    
+</body>
+
+</html>
+
